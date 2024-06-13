@@ -16,7 +16,7 @@ app.use(express.json())
 
 mongoose.connect("mongodb+srv://sonalazar:9633591213@cluster0.jd3vcot.mongodb.net/busdb?retryWrites=true&w=majority&appName=Cluster0")
 
-app.post("/signup",async(req,res)=>{
+app.post("/SignUp",async(req,res)=>{
     let input=req.body
     let hashedPassword=await generateHashedPassword(input.password)
     console.log(hashedPassword)

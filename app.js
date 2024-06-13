@@ -28,7 +28,6 @@ app.post("/SignUp",async(req,res)=>{
 })
 
 
-
 app.listen(8080,()=>{
     console.log("server started")
 })
